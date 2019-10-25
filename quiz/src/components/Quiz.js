@@ -1,31 +1,35 @@
 import React from "react";
-import { Container, Card, CardText, CardBody, Button } from "reactstrap";
-import styled from "styled-components";
-
-// const NewCard = styled(Card)`
-//   background-color: #f6f6f71f;
-//   box-shadow: 0 4px 15px black;
-//   padding-top: 30px;
-//   margin-top: 66px;
-//   margin-bottom: 80px;
-// `;
+import { Container, Card, CardText, CardBody, Button, Alert } from "reactstrap";
 
 function Quiz(props) {
+  const revealAnswer = () => {
+    return (
+      <>
+        {/* let result={props.result} */}
+        {alert(props.result)}
+      </>
+    );
+  };
   console.log("quiz", props);
   return (
-    <Container>
-      <Card>
-        <CardBody>
-          <CardText>{props.question}?</CardText>
-          <Button color="success" size="lg" value="True">
-            True
-          </Button>
-          <Button color="danger" size="lg" value="False">
-            False
-          </Button>
-        </CardBody>
-      </Card>
-    </Container>
+    <div>
+      <Container>
+        <Card>
+          <CardBody>
+            <CardText>{props.question}</CardText>
+            {/* <Button color="success" size="lg" value="True">
+              True
+            </Button>
+            <Button color="danger" size="lg" value="False">
+              False
+            </Button> */}
+            <Button onClick={revealAnswer} color="success">
+              Reveal Answer
+            </Button>
+          </CardBody>
+        </Card>
+      </Container>
+    </div>
   );
 }
 
