@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Quiz from "./components/Quiz";
+import Header from "./components/Header";
 import { connect } from "react-redux";
 import { fetchQuestions } from "./actions/questions";
 
@@ -13,7 +14,7 @@ function App(props) {
   console.log("question", props);
   return (
     <div className="App">
-      <h1>Trivia QUIZ</h1>
+      <Header />
       <div>
         {props.results.map(item => (
           <Quiz

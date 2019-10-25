@@ -1,5 +1,13 @@
 body {
   margin: 0;
+  background: url("./assets/question.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
+
+  background: cover;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;

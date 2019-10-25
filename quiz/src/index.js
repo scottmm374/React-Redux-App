@@ -6,6 +6,7 @@ import thunk from "redux-thunk";
 import logger from "redux-logger";
 import "./index.css";
 import App from "./App";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { reducer } from "./reducers/questions";
 import * as serviceWorker from "./serviceWorker";
 
